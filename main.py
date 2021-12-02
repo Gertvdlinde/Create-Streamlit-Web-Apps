@@ -12,3 +12,8 @@ st.subheader (' Introduction to Streamlit')
 st.write('''This is our first web app''')
 st.write(df)
 st.line_chart(df)
+st.area_chart(df)
+
+myslider = st.slider('Celciuis')
+st.write(myslider, 'in Fahrenheit is',myslider *9/5 +32)
+
